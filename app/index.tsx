@@ -7,21 +7,18 @@ export default function App() {
   const router = useRouter();
   return (
     <View style={styles.container}>
-      {/* Illustration */}
       <Image 
         source={require('@/assets/images/man.png')} 
         style={styles.illustration} 
       />
-      
-      {/* Title */}
+
       <Text style={styles.title}>Discover Your Dream Job here</Text>
 
-      {/* Subtitle */}
+ 
       <Text style={styles.subtitle}>
         Explore all the existing job roles based on your interest and study major
       </Text>
-
-      {/* Buttons */}
+ 
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.loginButton}onPress={() => router.push('/login')}>
           <Text style={styles.buttonText1}>Login</Text>

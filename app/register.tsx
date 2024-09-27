@@ -5,44 +5,43 @@ import { FontAwesome } from '@expo/vector-icons';
 export default function RegisterScreen() {
   return (
     <View style={styles.container}>
-      {/* Title */}
+ 
       <Text style={styles.title}>Create Account</Text>
       <Text style={styles.subtitle}>
         Create an account so you can explore all the existing jobs
       </Text>
 
-      {/* Email Input */}
+  
       <TextInput
         style={styles.input}
         placeholder="Email"
         keyboardType="email-address"
       />
 
-      {/* Password Input */}
+
       <TextInput
         style={styles.input}
         placeholder="Password"
         secureTextEntry
       />
 
-      {/* Confirm Password Input */}
+  
       <TextInput
         style={styles.input}
         placeholder="Confirm Password"
         secureTextEntry
       />
 
-      {/* Sign Up Button */}
       <TouchableOpacity style={styles.signUpButton}>
         <Text style={styles.signUpText}>Sign up</Text>
       </TouchableOpacity>
 
-      {/* Already have an account */}
+   
       <TouchableOpacity>
         <Text style={styles.alreadyAccount}>Already have an account</Text>
       </TouchableOpacity>
 
-      {/* Social Login */}
+
       <Text style={styles.continueText}>Or continue with</Text>
       <View style={styles.socialContainer}>
         <TouchableOpacity style={styles.socialButton}>
