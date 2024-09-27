@@ -1,8 +1,10 @@
 // App.js
+import { useRouter } from 'expo-router';
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 
 export default function App() {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       {/* Illustration */}
@@ -21,10 +23,10 @@ export default function App() {
 
       {/* Buttons */}
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity style={styles.loginButton}onPress={() => router.push('/login')}>
           <Text style={styles.buttonText1}>Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.registerButton}>
+        <TouchableOpacity style={styles.registerButton}onPress={() => router.push('/register')}>
           <Text style={styles.buttonText}>Register</Text>
         </TouchableOpacity>
       </View>
